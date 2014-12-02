@@ -1,0 +1,15 @@
+<template name="login">
+
+    {{#if err}}
+        <p>
+            {{err}}
+        </p>
+    {{/if}}
+
+    <div class="login" >
+        <input type="text" id="username" placeholder="Nama Pengguna"> <br/>
+        <input type="password" id="password" placeholder="Password" > <br/>
+        <button id="doLogin" type="button">Login</button>
+    </div>
+
+</template>
