@@ -1,0 +1,29 @@
+<template name="install" >
+    {{>makeAdmin}}
+    {{>makeTypeUser}}
+    {{>makeUser}}
+</template>
+
+<template name="makeAdmin">
+    <input type="text" id="username" placeholder="Nama Admin"><br/>
+    <input type="password" id="password" placeholder="Password Admin" ><br/>
+
+    <button type="button" id="doMakeAdmin" >Submit </button>
+    <br/>
+</template>
+
+<template name="makeTypeUser">
+    <input type="text" id="typeUser" placeholder="Tipe Pengguna">
+    <br/>
+    <button id="doMakeTypeUser">Submit</button>
+    <br/>
+</template>
+
+<template name="makeUser">
+    <input type="text" id="username" placeholder="Nama User"><br/>
+    <input type="password" id="password" placeholder="Password User" ><br/>
+    <select id="type">
+        <option disabled>Tipe Pengguna</option>
+    </select><br/>
+    <button type="button" id="doMakeUser" >Submit </button>
+</template>
